@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AshenOneSimpleMessenger
 
 A little fullstack messenger project
@@ -28,3 +29,6 @@ npm i - to install all dependencies for client
 cd .. - return to previous folder
 
 npm run dev - run the project
+=======
+# TempestSimpleMessager
+>>>>>>> a3ef269b28703ac18a505ac78b4c7ed4a91b814f
