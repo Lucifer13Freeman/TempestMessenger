@@ -1,0 +1,20 @@
+{
+  "name": "ashen-one-simple-messager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "npm run dev --prefix server",
+    "dev-client": "npm start --prefix client",
+    "dev": "concurrently \"npm run dev-client\" \"npm run dev-server\"",
+    "start-server": "npm start --prefix server",
+    "start-client": "npm start --prefix client",
+    "start": "concurrently \"npm run start-client\" \"npm run start-server\""
+  },
+  "author": "Lucifer13Freeman",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}

@@ -1,0 +1,23 @@
+$blue: #450000bb;
+$paragraph-margin-bottom: 0;
+$gray-600: rgb(245, 245, 245);
+
+@import "~bootstrap/scss/bootstrap";
+
+html,
+body 
+{
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  min-height: 100vh;
+  background: linear-gradient(
+    203deg, 
+    rgba(170, 108, 108, 0.9) 0%, 
+    rgba(153, 145, 145, 0.9) 50%,
+    rgba(88, 88, 88, 0.9) 100%
+  );
+  min-width: 360px;
+}
