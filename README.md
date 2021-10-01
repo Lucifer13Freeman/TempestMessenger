@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# AshenOneSimpleMessenger
+
+# TempestSimpleMessenger
 
 A little fullstack messenger project
 
