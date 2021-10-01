@@ -5,7 +5,7 @@ import { Col, Form } from 'react-bootstrap';
 import Message from './Message/Message';
 import { SET_USER_MESSAGES } from '../../../constants/actions';
 import { GET_MESSAGES } from '../../../graphql/queries';
-import { SEND_MESSAGE } from '../../../graphql/muatations';
+import { SEND_MESSAGE } from '../../../graphql/mutations';
 
 
 const Messages: React.FC = () => 

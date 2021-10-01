@@ -4,7 +4,7 @@ import { Button, Card, OverlayTrigger, Popover, Tooltip } from "react-bootstrap"
 import moment from 'moment';
 import { useState } from "react";
 import { useMutation } from "@apollo/client";
-import { REACT_TO_MESSAGE } from "../../../../graphql/muatations";
+import { REACT_TO_MESSAGE } from "../../../../graphql/mutations";
 
 
 const reactions = ['❤️', '😆', '😯', '😢', '😡', '👍', '👎'];
