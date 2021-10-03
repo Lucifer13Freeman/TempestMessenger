@@ -20,6 +20,10 @@ cd server - open server folder in terminal
 
 npm i - to install all dependencies for server
 
+npx sequelize db:migrate - for migrations
+
+npx sequelize db:seed:all - for seeders
+
 cd .. - return to previous folder
 
 cd client - open client folder in terminal
