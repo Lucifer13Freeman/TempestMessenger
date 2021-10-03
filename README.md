@@ -1,5 +1,5 @@
 
-# TempestSimpleMessenger
+# Tempest Messenger
 
 A little fullstack messenger project
 
