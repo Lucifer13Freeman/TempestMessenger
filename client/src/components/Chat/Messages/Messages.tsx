@@ -6,6 +6,7 @@ import Message from './Message/Message';
 import { SET_USER_MESSAGES } from '../../../constants/actions';
 import { GET_MESSAGES } from '../../../graphql/queries';
 import { SEND_MESSAGE } from '../../../graphql/mutations';
+import { ENETRESET } from 'constants';
 
 
 const Messages: React.FC = () => 
@@ -47,7 +48,7 @@ const Messages: React.FC = () =>
   }, [messages_data]);
 
 
-  const submit_message = (e: React.FormEvent) =>
+  const submit_message = (e: React.FormEvent | React.KeyboardEvent<HTMLTextAreaElement> | React.TouchEvent) =>
   {
     e.preventDefault();
 
@@ -58,6 +59,10 @@ const Messages: React.FC = () =>
     set_content('');
   }
 
+  const keyDownHandle = (e: React.KeyboardEvent<HTMLTextAreaElement>) =>
+  {
+    if(e.key === 'Enter') submit_message(e);
+  }
 
   let selected_chat_markup;
 
@@ -105,6 +110,7 @@ const Messages: React.FC = () =>
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => 
                         { e.target.value.length < 255 && 
                           set_content(e.target.value) }}
+              onKeyDown={keyDownHandle}
             />
             <i 
               className="fas fa-paper-plane fa-2x text-primary mx-2"
